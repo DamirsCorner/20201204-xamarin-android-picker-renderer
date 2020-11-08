@@ -17,7 +17,7 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportRenderer(typeof(BorderlessPicker), typeof(BorderlessPickerRenderer))]
 namespace AndroidPickerRenderer.Droid.Renderers
 {
-    public class BorderlessPickerRenderer : PickerRenderer
+    public class BorderlessPickerRenderer : Xamarin.Forms.Platform.Android.AppCompat.PickerRenderer
     {
         public BorderlessPickerRenderer(Context context) : base(context)
         {
