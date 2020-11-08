@@ -14,5 +14,7 @@ namespace AndroidPickerRenderer.ViewModels
         }
 
         public ICommand OpenWebCommand { get; }
+
+        public string[] Days { get; } = new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
     }
 }
