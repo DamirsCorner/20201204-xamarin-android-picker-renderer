@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AndroidPickerRenderer.Views.AboutPage"
              xmlns:vm="clr-namespace:AndroidPickerRenderer.ViewModels"
+             xmlns:controls="clr-namespace:AndroidPickerRenderer.Controls"
              Title="{Binding Title}">
     
     <ContentPage.BindingContext>
@@ -45,8 +46,8 @@
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
-                <Picker Title="Day"
-                        ItemsSource="{Binding Days}"/>
+                <controls:BorderlessPicker Title="Day"
+                                           ItemsSource="{Binding Days}"/>
             </StackLayout>
         </ScrollView>
     </Grid>
